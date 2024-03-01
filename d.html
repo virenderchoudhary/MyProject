@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .box{
+        width: 500px;
+        height: 500px;
+        box-shadow:  2px 2px 2px 4px gray;
+        background-color: aqua;
+        margin: auto;
+        top: 100px;
+        position: relative;
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: space-between;
+        transform: rotatey(70deg);;
+        transition: 1s;
+        transform-origin: top;
+        transform: scale(1.2,1.2);
+    }
+    .left{
+        position: absolute;
+        top: 160px;
+        transform: rotatex(90deg);
+        padding: 20px;
+        transition: 1s;
+        opacity: 0;    
+    }
+    .right{
+        position: absolute;
+        left: 145px;
+        top:100px;
+        padding: 1px;
+        transform-style: preserve-3d;
+        transform: scale( 1.2,2.2);
+    }
+    .box:hover .left{
+        opacity: 1;
+        transform-style: preserve-3d;
+        transform: rotate(0deg) ;
+  
+    }
+    .box:hover .right{
+        transform: rotatey(0deg);
+        left: 300px;
+        transform: scale( 2.2,2.9);
+    }
+    .box:hover {
+        transform: rotateX(0deg);
+    }
+   
+
+
+    
+</style>
+</head>
+<body>
+    <div class="box">
+        
+           <div class="left">
+            <h2>iron man
+            </h2>
+            <br> 
+            Lorem ipsum dolor sit amet <br>brconsectetur adipisicing elit. Tempore <br>voluptates officiisbr <br> consectetur sit ipsum tempora <br>temporibus laboriosam alias nulla mollitia, <br>corporis facere, at voluptatum ratione <br>ipsam quis excepturi commodi itaque.
+           </div>
+           <div class="right">
+            <img src="./2765e4cc9a71e330b340b4aa12fd82f5 (3).png" height="300px" width="250px" >
+           </div>
+            
+    </div>
+    
+</body>
+</html>
